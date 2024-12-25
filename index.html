@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <title>祝你圣诞快乐</title>
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, minimal-ui">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, minimal-ui">
   <style>
     * {
       margin: 0;
@@ -26,10 +27,11 @@
       display: flex;
       width: 100vw;
       height: 100vh;
+      flex-direction: column;
       position: absolute;
       align-items: center;
       justify-content: center;
-      background: #e65f5f;
+      background: #c4585e;
     }
 
     button {
@@ -72,9 +74,12 @@
 </head>
 
 <body>
-  <div class="mask"><button>请开始你的表演</button></div>
+  <div class="mask">
+    <h3 style="color: azure; margin-bottom: 10px;">露露宝宝，圣诞节快乐！</h3>
+    <button>请开始你的表演</button>
+  </div>
   <div class="preview">
-    <h2>祝你圣诞快乐</h2>
+    <h2>祝露露宝宝圣诞快乐</h2>
     <div class="santa">
       <div class="hat">
         <div class="hat-top">
@@ -122,7 +127,8 @@
   <div class="code-wrapper">
     <pre id="code"></pre>
   </div>
-  <audio preload loop="loop" id="player" src="http://dl.stream.qqmusic.qq.com/M5000031uKNk2omqvp.mp3?vkey=5C0CEC44A47198C52BDE5C03AEADB980C30204971342E782714F2E7AEA94D1209BFD095B4DD7E11E63F85632E947C162F0BBC25D28DFE193&guid=5150825362&fromtag=1"></audio>
+  <audio preload loop="loop" id="player"
+    src="http://dl.stream.qqmusic.qq.com/M5000031uKNk2omqvp.mp3?vkey=5C0CEC44A47198C52BDE5C03AEADB980C30204971342E782714F2E7AEA94D1209BFD095B4DD7E11E63F85632E947C162F0BBC25D28DFE193&guid=5150825362&fromtag=1"></audio>
   <script src="./prism.js"></script>
   <script src="./index.js"></script>
 </body>
